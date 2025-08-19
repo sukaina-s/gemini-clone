@@ -9,7 +9,7 @@ import {
 
 async function main(prompt) {
   const ai = new GoogleGenAI({
-    apiKey: "AIzaSyBy_Lnf6wSn8_dG66pKazeXd9Nx__q-wTQ",
+    apiKey: import.meta.env.VITE_API_KEY,
   });
   const tools = [
     {
