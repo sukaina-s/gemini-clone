@@ -45,6 +45,9 @@ async function main(prompt) {
     console.log(chunk.text);
     data += chunk.text;
   }
+
+  if(!data)
+    return "Gemini is facing some issues. Please try again later."
   return data;
 }
 
